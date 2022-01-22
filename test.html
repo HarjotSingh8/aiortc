@@ -27,8 +27,8 @@
           let video_element = document.getElementById("video");
           let audio_element = document.getElementById("audio");
           // let url_signaling_server = "https://webrtc-signaling-server-demo.herokuapp.com";
-        //   let url_signaling_server = "http://3.239.23.217:8000";
-          let url_signaling_server = "https://localhost:8000";
+            let url_signaling_server = "http://3.239.23.217:8000";
+          //let url_signaling_server = "https://localhost:8000";
           let secret_key = document.getElementById("secret_key").value;
           webrtc_streaming.initialize(url_signaling_server, secret_key, true, video_element, audio_element);
           webrtc_streaming.start();
